@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdp7loevglssx"]
+
+[ext_resource type="Texture2D" uid="uid://dy1smca0nnfx1" path="res://Assets/Crops/cabbage_00.png" id="1_cx2ew"]
+[ext_resource type="Script" uid="uid://bfcwaubgnxeuw" path="res://Scenes/cabbage.gd" id="1_rdmgp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rdmgp"]
+
+[node name="cabbage_seed" type="Area2D"]
+script = ExtResource("1_rdmgp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_rdmgp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cx2ew")
